@@ -1,12 +1,26 @@
-
 exports.min = function min (array) {
-  return 0;
+  if(array ===undefined )return 0;
+  let temp = array
+  if( temp.length === 0 ||temp=== 0  )return 0;
+  
+   else return  Math.min(...array); 
+  
 }
 
 exports.max = function max (array) {
-  return 0;
+  
+  if(array ===undefined )return 0;
+  let temp = array
+  if( temp.length === 0 ||temp=== 0  )return 0;
+    else return Math.max(...array); 
+  
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  
+  if(array ===undefined )return 0;
+  let temp = array
+  if( temp.length === 0 ||temp=== 0  )return 0;
+
+  else return array.reduce((a, b) => (a + b)) / array.length;
 }
